@@ -6,7 +6,7 @@ import java.util.Iterator;
  * Also implements Iterable interface. (commented out)
  * @param <T>
  */
-public class MyLinkedList<T> implements MyListInterface<T>, Iterable<T>{
+public class CustomArrayList<T> implements MyListInterface<T>, Iterable<T>{
     private Node<T> head;
     private Node<T> tail;
     private int size;
