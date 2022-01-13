@@ -5,7 +5,7 @@
  *
  * @param <e>
  */
-public class CustomArrayList<E> implements MyListInterface<E> {
+public class CustomArrayList<E> implements CustomListInterface<E> {
     private Object[] array;
     private int size;
     private int maxSize;
@@ -13,7 +13,7 @@ public class CustomArrayList<E> implements MyListInterface<E> {
     /**
      * Default constructor, creates an empty underlying array with maxSize 2
      */
-    public MyArrayList() {
+    public CustomArrayList() {
         maxSize = 2;
         size = 0;
         array = new Object[maxSize];
@@ -23,7 +23,7 @@ public class CustomArrayList<E> implements MyListInterface<E> {
      * Sized constructor, creates an empty object with maxSize size
      * @param size the initial size of the underlying array
      */
-    public MyArrayList(int size) {
+    public CustomArrayList(int size) {
         maxSize = size;
         size = 0;
         array = new Object[size];
@@ -34,7 +34,7 @@ public class CustomArrayList<E> implements MyListInterface<E> {
      * array large enough to fit them.
      * @param e
      */
-    public MyArrayList(E ...e) {
+    public CustomArrayList(E ...e) {
         maxSize = size = e.length;
         array = new Object[size];
 
