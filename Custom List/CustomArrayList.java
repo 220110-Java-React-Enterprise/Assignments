@@ -1,5 +1,3 @@
-package collections;
-
 /**
  * A fairly simple arraylist implementation extending custom list interface.
  * Default size is 2, grows by size * 2 when needed.
