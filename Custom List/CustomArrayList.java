@@ -7,7 +7,7 @@ package collections;
  *
  * @param <e>
  */
-public class MyArrayList<E> implements MyListInterface<E> {
+public class CustomArrayList<E> implements MyListInterface<E> {
     private Object[] array;
     private int size;
     private int maxSize;
